@@ -1,0 +1,36 @@
+.header-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(37, 73, 116, 0.80);
+    z-index: 2;
+
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(100%);
+    transition: transform .3s ease-in;
+
+    &--active {
+        transform: translateX(0);
+    }
+}
+
+.header-menu__content {
+    background-color: #fff;
+    padding: 30px 15px 40px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-menu__contacts {
+    display: none;
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        display: block;
+    }
+}

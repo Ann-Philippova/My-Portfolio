@@ -1,0 +1,134 @@
+html {
+    min-height: 100vh; /* sticky footer */
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh; /* sticky footer */
+	display: flex; /* sticky footer */
+	flex-direction: column; /* sticky footer */
+
+	font-family: 'Montserrat', sans-serif;
+    color: $black-color;
+    font-size: 16px;
+    line-height: 1.6875;
+
+    text-rendering: optimizeSpeed;
+    //text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body > * {
+	flex-shrink: 0; /* sticky footer */
+}
+
+section {
+	position: relative;
+}
+
+/* Grid styles */
+
+.container {
+	max-width: 1140px;
+    width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+    &--fluid {
+        max-width: unset;
+    }
+
+    &--no-padding {
+        padding: 0;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        max-width: 900px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        max-width: 768px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        max-width: 320px;
+    }
+}
+
+/* Utility */
+
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.fake-offset{
+    margin-top: -60px;
+    padding-top: 60px;
+}
+
+
+/* Links */
+
+.link {
+    font-size: 22px;
+    color: #1A71D2;
+    transition: 0.2s ease-in;
+
+    &:link, &:visited {
+        color: #1A71D2;
+    }
+    &:hover {
+        color: #FF543E;
+        // color: #1A71D2;
+        // text-decoration: underline;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 18px;
+    }
+}
+
+/* Underline */
+
+.underline {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: left bottom 15px;
+    background-size: 100% 12px;
+    background-image: linear-gradient(to right, $accent-color, $accent-color);
+}
+
+/* Sticky Footer */
+
+.footer {
+	margin-top: auto; /* sticky footer */
+
+	/* Just for fun */
+	text-align: center;
+	background-color: #e2e2e2;
+	padding: 50px 0;
+}

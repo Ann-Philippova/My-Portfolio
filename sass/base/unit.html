@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Верстальщик сайтов Татьяна Шустрова</title>
+		<meta name="description" content="Татьяна Шустрова - сайт портфолио" />
+		<meta name="keywords" content="web developer, frontender, html5, css3" />
+
+		<link rel="preload" href="./fonts/Montserrat/Montserrat-Regular.woff2" as="font" crossorigin="anonymous"/>
+		<link rel="preload" href="./fonts/Montserrat/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous"/>
+		<link rel="preload" href="./fonts/Montserrat/Montserrat-Bold.woff2" as="font" crossorigin="anonymous"/>
+
+		<!-- Animation AOS -->
+		<link rel="stylesheet" href="./libs/aos/aos.css">
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- Open Graph -->
+		<meta property="og:url" content="https://tatyanashustrova.ru/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Верстальщик сайтов: HTML5, CSS3, SASS" />
+		<meta property="og:description" content="Cайт портфолио" />
+		<meta property="og:image" content="./img/opengraph.jpg"/>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicons/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#0081bf">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#09628c">
+		<meta name="msapplication-config" content="./img/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+
+	</head>
+	<body id="top">
+
+		<nav class="nav">
+			<div class="container">
+				<div class="nav__row">
+
+					<div class="nav__logo">HTML верстальщик</div>
+
+					<ul class="nav__menu" id="header-menu">
+						<li class="nav__item"><a href="#skills">Навыки</a></li>
+						<li class="nav__item"><a href="#portfolio">Портфолио</a></li>
+						<li class="nav__item"><a href="#timeline">Как я работаю</a></li>
+						<li class="nav__item active"><a href="#contacts">Контакты</a></li>
+					</ul>
+
+					<div class="nav__contacts">
+						<a class="nav__contacts-icon" href="https://vk.com/write-210331970" target="_blank"><img src="./img/social-icons/vk.svg" alt="Вконтакте" width="48" height="48"></a>
+						<a class="nav__contacts-icon" href="https://wa.me/+79166502086?text=Здравствуйте%2C+у+меня+есть+вопрос+по+верстке." target="_blank"><img src="./img/social-icons/whatsapp.svg" alt="Whatsapp" width="48" height="48"></a>
+					</div>
+
+					<div class="nav-icon">
+						<div class="nav-icon__middle"></div>
+					</div>
+
+					<div class="mobile-menu">
+						<ul class="mobile-menu__list">
+							<li class="mobile-menu__item"><a href="#skills">Навыки</a></li>
+							<li class="mobile-menu__item"><a href="#portfolio">Портфолио</a></li>
+							<li class="mobile-menu__item"><a href="#timeline">Как я работаю</a></li>
+							<li class="mobile-menu__item"><a href="#contacts">Контакты</a></li>
+						</ul>
+						<div class="mobile-menu__social">
+							<div class="social">
+								<a href="https://t.me/Tanya_Sh75" target="_blank"><img class="social__icon" src="./img/social-icons/telegram.svg" alt="telegram" width="38" height="38">
+								<a href="https://vk.com/write-210331970" target="_blank"><img class="social__icon" src="./img/social-icons/vk.svg" alt="vkontakte" width="38" height="38">
+								<!-- <a href="https://instagram.com/websites_tsh" target="_blank"><img class="social__icon" src="./img/social-icons/instagram.svg" alt="instagram" width="38" height="38"></a> -->
+								<a href="https://wa.me/+79166502086?text=Здравствуйте%2C+у+меня+есть+вопрос+по+верстке." target="_blank"><img class="social__icon" src="./img/social-icons/whatsapp.svg" alt="whatsapp" width="38" height="38">
+							</div>
+
+							<div class="moblie-menu__email">
+								<a href="mailto:tanyashustrova@yandex.ru" class="link">tanyashustrova@yandex.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="overlay" id="overlay"></div>
+
+				</div>
+			</div>
+		</nav>
+		<!-- // Навигация -->
+
+		<!-- Header -->
+		<header class="header">
+
+			<div class="header-content">
+				<div class="container">
+					<div class="header-content__row">
+						<div class="header-content__info">
+							<div class="header-content__title">
+								<h1 class="heading-1 underline">Татьяна Шустрова</h1>
+							</div>
+							<div class="header-content__desc">
+								<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением cроков и выполнением ТЗ.</p>
+								<a class="link" href="./files/TSH-resume.pdf" target="_blank">Мое резюме</a>
+							</div>
+							<div class="header-content__buttons">
+								<a href="#skills" class="button">Познакомиться</a>
+								<a href="#contacts" class="button button--light">Контакты</a>
+							</div>
+						</div>
+						<div class="header-content__foto">
+							<img src="./img/header/my-foto.jpg" alt="Мое фото" width="475" height="410">
+						</div>
+						<div class="header-content__desc header-content__desc--mobile">
+							<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением cроков и выполнением ТЗ.</p> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // Content -->
+
+			<div class="header-img">
+				<img src="./img/header/header-image.png" alt="header image" width="1440" height="760">
+			</div>
+			<!-- // Image -->
+
+			<div class="fake-offset" id="skills">
+				<div class="header-skills">
+	
+					<div class="container">
+	
+						<div class="header-skills__row">
+	
+							<div class="header-skills__content" data-aos="flip-left"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="1000">
+	
+								<div class="header-skills__title">
+									<h3 class="heading-3">Что я умею:</h3>
+								</div>
+	
+								<ul class="header-skills__list">
+									<li>pixel perfect, полное соответствие макету</li>
+									<li>верстаю по макетам из Figma и Photoshop</li>
+									<li>адаптивная верстка под мобильные устройства</li>
+									<li>оптимизация под retina-экраны</li>
+									<li>соблюдаю стандарты W3C</li>
+								</ul>
+	
+							</div>
+	
+							<div class="header-skills__contacts" data-aos="flip-left"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="1000">
+	
+								<div class="header-skills__title">
+									<h3 class="heading-3">На связи:</h3>
+								</div>
+	
+								<div class="header-skills__social">
+									<div class="social">
+										<a href="https://t.me/Tanya_Sh75" target="_blank"><img class="social__icon" src="./img/social-icons/telegram.svg" alt="telegram" width="48" height="48"></a>
+										<a href="https://vk.com/write-210331970" target="_blank"><img class="social__icon" src="./img/social-icons/vk.svg" alt="vkontakte" width="48" height="48"></a>
+										<!-- <a href="https://instagram.com/websites_tsh" target="_blank"><img class="social__icon" src="./img/social-icons/instagram.svg" alt="instagram" width="48" height="48"></a> -->
+										<a href="https://wa.me/+79166502086?text=Здравствуйте%2C+у+меня+есть+вопрос+по+верстке." target="_blank"><img class="social__icon" src="./img/social-icons/whatsapp.svg" alt="whatsapp" width="48" height="48"></a>
+									</div>
+								</div>
+	
+								<div class="header-skills__email">
+									<a href="mailto:tanyashustrova@yandex.ru" class="link">tanyashustrova@yandex.ru</a>
+								</div>
+		
+							</div>
+	
+						</div>
+	
+					</div>
+	
+				</div>
+			</div>
+			<!-- // Skills -->
+
+		</header>
+		<!-- // Header -->
+
+		<!-- Main -->
+		<main>
+
+			<!-- Portfolio -->
+			<div class="fake-offset" id="portfolio">
+				<section class="portfolio">
+	
+					<div class="container">
+	
+						<div class="portfolio__title">
+							<h2 class="heading-2 underline">Портфолио</h2>
+						</div>
+	
+						<div class="mix-block">
+							<div class="mix-block__buttons">
+								<button class="mix-btn" type="button" data-filter="all" id="mix-all">Все работы</button>
+								<button class="mix-btn" type="button" data-filter=".landing">Лендинг</button>
+								<button class="mix-btn" type="button" data-filter=".blog">Блог</button>
+								<button class="mix-btn" type="button" data-filter=".vizitka">Сайт-визитка</button>
+								<button class="mix-btn" type="button" data-filter=".gulp">Gulp/Pug</button>
+							</div>
+	
+							<div class="portfolio-cards" id="mix-cards">
+	
+								<a class="portfolio-cards__link mix blog" href="./../forest-travel-scss/main.html" target="_blank">
+									<div class="card card--big">
+										<div class="card__img">
+											<img src="./img/works/forest-travel.jpg" alt="Форест тревел" width="540" height="370">
+											<span>Смотреть проект</span>
+										</div>
+										<div class="card__title"><h4 class="heading-4">Проект “Форест тревел”</h4></div>
+										<div class="card__desc"><p>Верстка многостраничного сайта (с адаптивом)</p></div>
+									</div>
+								</a>
+	
+								<a class="portfolio-cards__link mix landing" href="./../unit-project-js/index.html" target="_blank">
+									<div class="card card--big">
+										<div class="card__img">
+											<img src="./img/works/unit-project.jpg" alt="“Юнит”" width="540" height="370">
+											<span>Смотреть проект</span>
+										</div>
+										<div class="card__title"><h4 class="heading-4">Сайт приложения “Юнит”</h4></div>
+										<div class="card__desc"><p>Верстка лендинга (с адаптивом)</p></div>
+									</div>
+								</a>
+	
+								<a class="portfolio-cards__link mix blog"  href="./../trevland/index.html" target="_blank">
+									<div class="card">
+										<div class="card__img">
+											<img src="./img/works/trevland.jpg" alt="#" width="350" height="220">
+											<span>Смотреть проект</span>
+										</div>
+										<div class="card__title"><h4 class="heading-4">Проект “Trevland”</h4></div>
+										<div class="card__desc"><p>Верстка блога фото-туров (с адаптивом)</p></div>
+									</div>
+								</a>
+	
+								<a class="portfolio-cards__link mix blog"  href="./../mistgardens/index.html" target="_blank">
+									<div class="card">
+										<div class="card__img">
+											<img src="./img/works/mistgardens.jpg" alt="#" width="350" height="220">
+											<span>Смотреть проект</span>
+										</div>
+										<div class="card__title"><h4 class="heading-4">Проект “Mist Gardens”</h4></div>
+										<div class="card__desc"><p>Верстка лендинга (с адаптивом)</p></div>
+									</div>
+								</a>
+
+								<a class="portfolio-cards__link mix landing gulp"  href="./../cootels/index.html" target="_blank">
+									<div class="card">
+										<div class="card__img">
+											<img src="./img/works/cootels.jpg" alt="#" width="350" height="220">
+											<span>Смотреть проект</span>
+										</div>
+										<div class="card__title"><h4 class="heading-4">Проект “Cootels”</h4></div>
+										<div class="card__desc"><p>Верстка лендинга (с адаптивом)</p></div>
+									</div>
+								</a>
+
+								<a class="portfolio-cards__link mix gulp"  href="./../best-service/index.html" target="_blank">
+									<div class="card">
+										<div class="card__img">
+											<img src="./img/works/best-service.jpg" alt="#" width="350" height="220">
+											<span>Смотреть проект</span>
+										</div>
+										<div class="card__title"><h4 class="heading-4">Проект “Best Service”</h4></div>
+										<div class="card__desc"><p>Верстка многостраничного сайта (desktop-версия)</p></div>
+									</div>
+								</a>
+
+								<a class="portfolio-cards__link mix vizitka"  href="./../filters/index.html" target="_blank">
+									<div class="card">
+										<div class="card__img">
+											<img src="./img/works/filters.jpg" alt="#" width="350" height="220">
+											<span>Смотреть проект</span>
+										</div>
+										<div class="card__title"><h4 class="heading-4">Проект “Фильтры”</h4></div>
+										<div class="card__desc"><p>Верстка сайта-визитки (с адаптивом)</p></div>
+									</div>
+								</a>
+	
+							</div>
+	
+						</div>
+	
+					</div>
+	
+				</section>
+			</div>
+			<!-- // Portfolio -->
+
+			<!-- Timeline -->
+			<div class="fake-offset" id="timeline">
+				<section class="timeline">
+	
+					<div class="container">
+	
+						<div class="timeline__title">
+							<h2 class="heading-2 underline">Как я работаю</h2>
+						</div>
+	
+						<div class="timeline-block">
+	
+							<!-- timeline item -->
+							<div class="timeline-block__item">
+								<div data-aos="zoom-in-down">
+									<div class="timeline-block__title"><h5 class="heading-5 underline">Оцениваю макет</h5></div>
+									<div class="timeline-block__text"><p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p></div>
+									<div class="timeline-block__time">Время: 2 часа</div>
+								</div>	
+							</div>
+							<!-- // timeline item -->
+	
+							<!-- timeline item -->
+							<div class="timeline-block__item">
+								<div data-aos="zoom-in-down">
+									<div class="timeline-block__title"><h5 class="heading-5 underline">ТЗ, смета и график работ</h5></div>
+									<div class="timeline-block__text"><p>Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</p></div>
+									<div class="timeline-block__time">Время: 2-4 часа</div>
+								</div>
+							</div>
+							<!-- // timeline item -->
+	
+							<!-- timeline item -->
+							<div class="timeline-block__item">
+								<div data-aos="zoom-in-down">
+									<div class="timeline-block__title"><h5 class="heading-5 underline">Вы держите руку на пульсе</h5></div>
+									<div class="timeline-block__text"><p>Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</p></div>
+									</div>
+							</div>
+							<!-- // timeline item -->
+	
+							<!-- timeline item -->
+							<div class="timeline-block__item">
+								<div data-aos="zoom-in-down">
+									<div class="timeline-block__title"><h5 class="heading-5 underline">Выполняю каждый этап</h5></div>
+									<div class="timeline-block__text"><p>Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p></div>
+								</div>
+							</div>
+							<!-- // timeline item -->
+	
+							<!-- timeline item -->
+							<div class="timeline-block__item">
+								<div data-aos="zoom-in-down">
+									<div class="timeline-block__title"><h5 class="heading-5 underline">Финальное ревью проекта</h5></div>
+									<div class="timeline-block__text"><p>Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p></div>
+									<div class="timeline-block__time">Время: 2-4 часа</div>
+								</div>							
+							</div>
+							<!-- // timeline item -->
+	
+	
+						</div>
+	
+					</div>
+	
+				</section>
+			</div>
+			<!-- // Timeline -->
+
+			<!-- Contacts -->
+			<div class="fake-offset" id="contacts">
+				<section class="contacts">
+					<div class="container">
+	
+						<div class="contacts__title">
+							<h2 class="heading-2 underline">Контакты</h2>
+						</div>
+	
+						<div class="contacts__row">
+	
+							<div class="contacts-block">
+	
+								<div class="contacts__text">
+									<p>Если вы ищете специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.</p>
+								</div>
+	
+								<ul class="contact-block__list">
+									<li class="contacts-block__item">
+										<span>Email</span>
+										<a href="mailto:tanyashustrova@yandex.ru" class="link">tanyashustrova@yandex.ru</a>
+									</li>
+	
+									<!-- <li class="contacts-block__item">
+										<span>Телефон</span>
+										<a href="tel:+79166502086" class="link">+7 (916) 650-20-86</a>
+									</li> -->
+								</ul>
+								
+								<div class="contacts-block__social">
+									<div class="social">
+										<a href="https://t.me/Tanya_Sh75"><img class="social__icon" src="./img/social-icons/telegram.svg" alt="telegram" width="48" height="48"></a>
+										<a href="https://vk.me/shustrovatanya"><img class="social__icon" src="./img/social-icons/vk.svg" alt="vkontakte" width="48" height="48"></a>
+										<a href="https://instagram.com/tanyashustrova"><img class="social__icon" src="./img/social-icons/instagram.svg" alt="instagram" width="48" height="48"></a>
+										<a href="https://wa.me/+79166502086?text=Здравствуйте%2C+у+меня+есть+вопрос+по+верстке."><img class="social__icon" src="./img/social-icons/whatsapp.svg" alt="whatsapp" width="48" height="48"></a>
+									</div>
+								</div>
+								
+							</div>
+	
+							<div class="form-wrapper">
+								<form action="#" class="contact-form">
+		
+									<div class="form-item">
+										<span class="form-item__fake-placeholder">Ваш email</span>
+										<input class="form-item__input" type="email" name="email">
+									</div>
+		
+									<div class="form-item">
+										<span class="form-item__fake-placeholder">Сообщение</span>
+										<textarea class="form-item__input" name="message" cols="30" rows="5"></textarea>
+									</div>
+		
+									<div class="form-button">
+										<button class="button" type="submit" name="submit">Отправить</button>
+									</div>
+		
+								</form>
+								<div id="answer"></div>
+							</div>
+	
+						</div>
+	
+						<div class="contacts__img">
+							<img class="move" src="./img/icons/marks.svg" alt="Кавычки">
+						</div>
+	
+					</div>
+				</section>
+			</div>
+			<!-- // Contacts -->
+
+		</main>
+		<!-- // Main -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__copyright">
+					<p>&copy; 2022 — Татьяна Шустрова</p>
+				</div>
+				<div class="footer__about">
+					<p>Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.</p>
+					<p>Этот сайт сделан в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
+				</div>
+			</div>
+		</footer>
+		<!-- // Footer -->
+
+		<!-- Button Up -->
+		<a class="backtop-button" href="#top" id="backtop"><img src="./img/icons/arrow-up.svg" alt="arrow up"></a>
+
+		<!-- jQuery -->
+		<script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+
+		<!-- jQuery Validate -->
+		<script src="./libs/jquery/jquery.validate.min.js"></script>
+
+		<!-- AOS -->
+		<script src="./libs/aos/aos.js"></script>
+		<script>
+			AOS.init(); 
+		</script>
+
+		<!-- Page Nav -->
+		<script src="./libs/page-nav/nav.js"></script>
+
+		<!-- MixItUp -->
+		<script src="./libs/mixitup/mixitup.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="./js/main.js"></script>
+
+	</body>
+</html>

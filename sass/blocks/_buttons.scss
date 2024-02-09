@@ -1,0 +1,44 @@
+.button {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 64px;
+    background: $accent-color;
+    border-radius: 50px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 64px;
+
+    transition: 0.2s ease-in;
+
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        background: #F5D22D;
+    }
+    &:hover, &:focus {
+        background: $accent-color-hover;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        padding-left: 26px;
+        padding-right: 26px;
+        height: 58px;
+        line-height: 58px;
+    }
+}
+.button--light {
+    background: #EFF7FC;
+
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        background: #B0DCF8;
+    }
+    &:hover, &:focus {
+        background: #D1EDFF;
+    }
+}

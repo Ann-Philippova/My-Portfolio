@@ -1,0 +1,32 @@
+.svg__linkedin {
+    width: 32px;
+    height: 32px;
+    fill: #000;
+}
+
+.svg__github {
+    width: 42px;
+    height: 42px;
+    fill: #212121;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.svg-telegram,
+.svg-vk,
+.svg-facebook,
+.svg-instagram,
+.svg-whatsapp {
+    width: 48px;
+    height: 48px;
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        width: 38px;
+        height: 38px;
+    }
+}

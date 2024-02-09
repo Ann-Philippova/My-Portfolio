@@ -1,0 +1,78 @@
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background: $sectionBg-color;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+.portfolio__title {
+    margin-bottom: 65px;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        margin-bottom: 40px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+    }
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -25px -15px;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+}
+
+.portfolio-cards__link {
+    margin: 25px 15px;
+    cursor: pointer;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
